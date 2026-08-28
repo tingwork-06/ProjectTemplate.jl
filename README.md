@@ -50,7 +50,7 @@ This project contains the basic files to start a larger project.
 | --- | --- |
 | `src/ProjectTemplate.jl` | The module code with its includes and exports. |
 | `src/hello.jl` | The implementation of the `hello()`  functions. Your code goes in files like this. |
-| `test/runtests.jl` | The tests. Every function you add needs one. |
+| `test/runtests.jl` | The tests. Everything you implement should be tested. |
 | `docs/src/` | The documentation pages, published to GitHub Pages. |
 | `docs/make.jl` | Builds the documentation. You rarely need to touch it. |
 | `.github/workflows/` | Runs the tests and publishes the docs automatically. |

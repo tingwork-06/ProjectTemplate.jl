@@ -1,26 +1,14 @@
 # ProjectTemplate.jl
 
-Replace this page with a description of your project: what problem you are
+<!-- DESCRIBE PROJECT BELOW -->
+Replace the content of `docs/src/index.md` with a description of your project: what problem you are
 solving, and what your package does.
-
-## Installation
-
-```julia
-julia> ]
-pkg> activate .
-pkg> instantiate
-```
-
-## Usage
-
-```julia
-using ProjectTemplate
-
-hello()
-```
+<!-- DESCRIBE PROJECT ABOVE -->
 
 ## Reference
 
+<!-- DO NOT EDIT BELOW -->
 ```@autodocs
 Modules = [ProjectTemplate]
 ```
+<!-- DO NOT EDIT ABOVE -->

@@ -1,6 +1,10 @@
 using Documenter
 using ProjectTemplate
 
+# Doctests run in a bare module, so the package has to be brought into scope
+# for them. Without this, every jldoctest fails with UndefVarError.
+DocMeta.setdocmeta!(ProjectTemplate, :DocTestSetup, :(using ProjectTemplate); recursive = true)
+
 makedocs(
     sitename = "ProjectTemplate.jl",
     modules  = [ProjectTemplate],

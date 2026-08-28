@@ -1,0 +1,6 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+ProjectTemplate = "a87ea0c4-effc-4c39-b324-814a8a71756c"
+
+[compat]
+Documenter = "1"

@@ -83,7 +83,7 @@ julia --project=docs docs/make.jl
 to build the documentation. You can review the documentation by opening `docs/build/index.html` in a browser. 
 
 > [!NOTE]
-> The documentation is automatically built and published to [GitHub Pages](https://klu-bads.github.io/ProjectTemplate.jl/)  on every push to `main`.
+> The documentation is built automatically on every pull request, and published to [GitHub Pages](https://klu-bads.github.io/ProjectTemplate.jl/) on every push to `main`.
 <!-- DESCRIBE DETAILED USAGE ABOVE -->
 
 

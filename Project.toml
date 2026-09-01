@@ -6,11 +6,11 @@ authors = [
 ]
 version = "0.1.0"
 
+# The docs and test environments are part of this workspace, so they resolve
+# against the same manifest and find this package without being told where it
+# is. Their own dependencies are in docs/Project.toml and test/Project.toml.
+[workspace]
+projects = ["docs", "test"]
+
 [compat]
-julia = "1.10"
-
-[extras]
-Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
-
-[targets]
-test = ["Test"]
+julia = "1.12"

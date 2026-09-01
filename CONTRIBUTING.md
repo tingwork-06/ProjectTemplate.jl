@@ -13,8 +13,9 @@ change, for example `add-hello` or `fix-empty-input`.
 
 ## Issues
 
-Create an issue before you start working. Describe the feature that is missing
-or the bug you found. If an issue already covers the change, work from that one.
+Create an issue before you start working. 
+Describe the feature that is missing or the bug that needs to be fixed.
+Add a suitable issue type from the side panel.
 
 ## Implementation
 

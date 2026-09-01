@@ -30,11 +30,16 @@ jobs:
 
       - uses: julia-actions/cache@v2
 
+      # PlantUML renders the diagrams by running plantuml.jar.
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
       - name: Install documentation dependencies
         run: |
           julia --project=docs -e '
             using Pkg
-            Pkg.develop(PackageSpec(path = pwd()))
             Pkg.instantiate()'
 
       - name: Build documentation

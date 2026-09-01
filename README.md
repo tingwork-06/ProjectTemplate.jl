@@ -73,14 +73,20 @@ julia --project=. -e 'using Pkg; Pkg.test()'
 
 To build the documentation locally, run
 ```bash
-julia --project=docs -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+julia --project=docs -e 'using Pkg; Pkg.instantiate()'
 ```
 once after cloning.
 Then, run 
 ```bash
 julia --project=docs docs/make.jl
 ```
-to build the documentation. You can review the documentation by opening `docs/build/index.html` in a browser. 
+to build the documentation. To read it, serve `docs/build` and open the address
+it prints:
+```bash
+julia -e 'using LiveServer; serve(dir = "docs/build")'
+```
+A web server is needed because the pages link to each other by directory.
+Opening `docs/build/index.html` from the file system leaves those links broken. 
 
 > [!NOTE]
 > The documentation is built automatically on every pull request, and published to [GitHub Pages](https://klu-bads.github.io/ProjectTemplate.jl/) on every push to `main`.

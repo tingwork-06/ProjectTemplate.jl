@@ -1,4 +1,5 @@
 using Documenter
+using DocumenterPlantUML
 using ProjectTemplate
 
 # Doctests run in a bare module, so the package has to be brought into scope
@@ -8,11 +9,10 @@ DocMeta.setdocmeta!(ProjectTemplate, :DocTestSetup, :(using ProjectTemplate); re
 makedocs(
     sitename = "ProjectTemplate.jl",
     modules  = [ProjectTemplate],
-    format   = Documenter.HTML(
-        prettyurls = get(ENV, "CI", nothing) == "true",
-    ),
     pages = [
-        "Home" => "index.md",
+        "Home"           => "index.md",
+        "Project design" => "design.md",
+        "Reference manual"  => "manual.md",
     ],
     # Fail the build if an exported function has no docstring.
     checkdocs = :exports,

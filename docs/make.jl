@@ -9,6 +9,11 @@ DocMeta.setdocmeta!(ProjectTemplate, :DocTestSetup, :(using ProjectTemplate); re
 makedocs(
     sitename = "ProjectTemplate.jl",
     modules  = [ProjectTemplate],
+    # Write design.html rather than design/index.html, so that the built pages
+    # can be opened from the file system. With the pretty form the links
+    # between pages point at directories, which a browser cannot follow over
+    # file://, and reading the documentation locally would need a web server.
+    format   = Documenter.HTML(prettyurls = false),
     pages = [
         "Home"           => "index.md",
         "Project design" => "design.md",

@@ -22,81 +22,48 @@ git clone https://github.com/KLU-BADS/ProjectTemplate.jl.git
 cd ProjectTemplate.jl
 julia --project=.
 ```
-
-Import the package by:
-
-```julia
-julia> using ProjectTemplate
-```
 <!-- DO NOT EDIT ABOVE -->
 
 
 <!-- DESCRIBE THE ESSENTIAL USAGE BELOW -->
-Once the package is imported you can get started with:
+Once the package is cloned you can run:
 
 ```julia
-julia> hello()
-Hello World
+using ProjectTemplate
+hello()
 ```
+to print "Hello World" to standard output.
 <!-- DESCRIBE THE ESSENTIAL USAGE ABOVE -->
 
+## Tests
 
-## Approach <!-- CHANGE HEADING AS APPROPRIATE  -->
+<!-- DO NOT EDIT BELOW -->
+Tests are run automatically on GitHub for every push to `main` and on every pull request.
 
-<!-- DESCRIBE PROJECT DESIGN AND APPROACH BELOW -->
-This project contains the basic files to start a larger project.
-
-| Path | What it is for |
-| --- | --- |
-| `src/ProjectTemplate.jl` | The module code with its includes and exports. |
-| `src/hello.jl` | The implementation of the `hello()`  functions. Your code goes in files like this. |
-| `test/runtests.jl` | The tests. Everything you implement should be tested. |
-| `docs/src/` | The documentation pages, published to GitHub Pages. |
-| `docs/make.jl` | Builds the documentation. You rarely need to touch it. |
-| `.github/workflows/` | Runs the tests and publishes the docs automatically. |
-| `Project.toml` | The package name, version and dependencies. |
-<!-- DESCRIBE PROJECT DESIGN AND APPROACH ABOVE -->
-
-## Usage
-
-<!-- DESCRIBE DETAILED USAGE BELOW -->
-To print "Hello World" use the `hello()` function.
-
-To run the tests locally, run
-```bash
-julia --project=. -e 'using Pkg; Pkg.test()'
-```
-
-> [!NOTE]
-> Tests are run automatically on GitHub for every push to `main` and on every pull request.
-
-
-To build the documentation locally, run
-```bash
-julia --project=docs -e 'using Pkg; Pkg.instantiate()'
-```
-once after cloning.
-Then, run 
-```bash
-julia --project=docs docs/make.jl
-```
-to build the documentation. To read it, serve `docs/build` and open the address
-it prints:
-```bash
-julia -e 'using LiveServer; serve(dir = "docs/build")'
-```
-A web server is needed because the pages link to each other by directory.
-Opening `docs/build/index.html` from the file system leaves those links broken. 
-
-> [!NOTE]
-> The documentation is built automatically on every pull request, and published to [GitHub Pages](https://klu-bads.github.io/ProjectTemplate.jl/) on every push to `main`.
-<!-- DESCRIBE DETAILED USAGE ABOVE -->
+> [!TIP]
+> To run the tests locally, run
+> ```bash
+> julia --project=. -e 'using Pkg; Pkg.test()'
+> ```
+ 
+<!-- DO NOT EDIT ABOVE -->
 
 
 ## Documentation
 
 <!-- DO NOT EDIT BELOW -->
-The online documentation can be found [here](https://klu-bads.github.io/ProjectTemplate.jl/).
+The [online documentation](https://klu-bads.github.io/ProjectTemplate.jl/) is automatically built and published to GitHub Pages on every push to `main`.
+
+> [!TIP]
+> To build the documentation locally, run
+> ```bash
+> julia --project=docs docs/make.jl
+> ```
+> and open `docs/build/index.html` in a browser.
+>
+> If building the documentation fails, run the tests locally before. 
+
+
 <!-- DO NOT EDIT ABOVE -->
 
 ## Contributing
